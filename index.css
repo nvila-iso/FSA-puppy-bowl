@@ -52,7 +52,8 @@ p {
 
 .puppies a {
   list-style: none;
-  border: 1px solid white;
+  border: 1px solid var(--foreground);
+  border-radius: 0.2rem;
   width: 12rem;
   padding: 0.5rem;
   margin-top: 0.8rem;
@@ -61,10 +62,12 @@ p {
   color: var(--foreground);
   text-decoration: none;
   font-size: 1.2rem;
+  transition: border, background-color 0.3s ease-in-out;
 }
 
 .puppies a:hover {
   background-color: #6272a4;
+  border: 1px solid #8be9fd;
 }
 
 .puppies #selected {
@@ -111,6 +114,7 @@ label {
   width: 15rem;
   margin-top: 0.8rem;
   margin-bottom: 0.5rem;
+  border-radius: 0.2rem;
 }
 
 @media screen and (max-width: 735px) {
