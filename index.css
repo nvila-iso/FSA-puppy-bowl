@@ -67,6 +67,10 @@ p {
   background-color: #6272a4;
 }
 
+.puppies #selected {
+  background-color: #6272a4;
+}
+
 .puppies p {
   margin-left: 0.4rem;
 }
@@ -133,9 +137,6 @@ label {
     width: 500px;
   }
 
-  .puppies ul {
-  }
-
   #selected {
     grid-row: 1;
     margin: 0 auto;
@@ -145,4 +146,48 @@ label {
   #submit-button {
     margin: 0 auto;
   }
+}
+
+@media screen and (max-width: 516px) {
+  main {
+  }
+
+  main section {
+    margin: 0 auto;
+    width: 95%;
+  }
+
+  form {
+    width: 66%;
+    margin: 0 auto;
+  }
+
+  .puppy-details p {
+    margin-left: 1rem;
+  }
+
+  .puppies {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .puppies a {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 0.5rem;
+  }
+
+  h2 {
+    margin-bottom: 0.8rem;
+  }
+
+  #submit-button {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 300px) {
 }
